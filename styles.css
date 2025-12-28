@@ -14,18 +14,22 @@
   }
 }
 
+html {
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+}
+
 body {
   font-family: monospace;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 60em;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
-  background-color: var(--background-colour);
 }
 
 #snippet {
   padding: 1em;
-  color: var(--text-colour);
   outline: none;
   flex-grow: 1;
 
@@ -41,7 +45,6 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: var(--text-colour);
   display: flex;
   justify-content: flex-end;
   gap: 1em;
